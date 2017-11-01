@@ -259,15 +259,17 @@ $inblo:inline-block;
     		}
     		h3{
     			color:#666;
+    			width:100%;
     			font-size:num(10rem);
     			white-space:nowrap;
     			margin-top:num(5rem);
-    			text-align:left;
+    			text-align:center;
 				@extend #shen;
     		}
     		em{
     			display:$blo;
-				text-align:left;
+    			width:100%;
+				text-align:center;
 				font-size:num(6rem);
 				font-family:'Times New Roman';
 	    		color:#888;

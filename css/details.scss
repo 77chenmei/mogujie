@@ -163,17 +163,18 @@ i{
 .sever{
 	background:#fff;
 	padding:num(8rem) 0 num(8rem) num(12rem);
-	white-space:nowrap
-	;font-size:num(8rem);
+	white-space:nowrap;
+	font-size:num(8rem);
+	-webkit-text-size-adjust:none;
 	font-family:'Times New Roman';
 	.send{
 	  float:right;
-	  margin-right:num(12rem);
+	  margin-right:num(10rem);
 	  i:nth-child(2){
-	  	margin-left:num(10rem);
+	  	margin-left:num(8rem);
 	  }
 	}
-	span{
-		
-	}
+}
+.sale{
+	
 }
