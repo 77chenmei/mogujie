@@ -84,6 +84,7 @@ i{
 	border-bottom:num(1rem) solid #eee;
 	position:relative;
 	background:#fff;
+	box-sizing:border-box;
 	.tit{
 	    width:num(290rem);
 		height:num(38rem);
@@ -138,7 +139,7 @@ i{
 		display:block;
 		color:#999;
 		font-size:num(12rem);
-		margin:num(15rem) 0 0 num(10rem);
+		margin:num(12rem) 0 0 num(10rem);
 	}
 	.nav{
 		width:num(50rem);
@@ -165,7 +166,6 @@ i{
 	padding:num(8rem) 0 num(8rem) num(12rem);
 	white-space:nowrap;
 	font-size:num(8rem);
-	-webkit-text-size-adjust:none;
 	font-family:'Times New Roman';
 	.send{
 	  float:right;
@@ -176,5 +176,13 @@ i{
 	}
 }
 .sale{
-	
+	margin-top:num(10rem);
+	background:#fff;
+	.slae_top{
+		padding:num(12rem) num(15rem);
+		h5{
+			font-size:num(12rem);
+			color:#999;
+		}
+	}
 }
