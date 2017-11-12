@@ -1,0 +1,148 @@
+@function num($val){
+	@return $val / 20
+};
+input::-webkit-input-placeholder{ 
+    color:#EDEDED;
+}
+#top{
+	width:100%;
+	height:num(38rem);
+	background:#fafafa;
+	border-bottom:num(1rem) solid #c9c7c8;
+	i{
+		display:inline-block;
+		width:num(25rem);
+		line-height:num(38rem);
+		text-align:center;
+	}
+	span{
+		display:inline-block;
+		margin:0 auto;
+		width:num(268rem);
+		text-align:center;
+		line-height:num(38rem);
+		font-size:num(13rem);
+		color:#5e5e5e;
+	}
+}
+#useWord{
+	width:100%;
+	border-bottom:num(1rem) solid #ddd;
+	overflow:hidden;
+}
+#inp{
+	line-height:num(42rem);
+	color:#424242;
+	font-size:num(18rem);
+	text-align:left;
+	padding-left:num(8rem);
+	box-sizing:border-box;
+	border:none;
+	outline:none;
+	background:#fff;
+}
+.top{
+	@extend #top;
+}
+.pass{
+	width:num(278rem);
+	margin:num(44rem) auto 0;
+	.user{
+		@extend #useWord;
+		input{
+			width:num(258rem);
+			@extend #inp;
+		}
+		i{
+			display:inline-block;
+			width:num(12rem);
+			height:num(12rem);
+			border-radius:50%;
+			color:#fff;
+			font-size:num(6rem);
+			background:#ccc;
+			line-height:num(12rem);
+			text-align:center;
+			display:none;
+		}
+	}
+	.word{
+		@extend #useWord;
+		position:relative;
+		.w1{
+			@extend #inp;
+			width:100%;
+			z-index:100;
+			background:transparent;
+		}
+		.w2{
+			@extend #inp;
+            text-align:center;
+            padding:0;
+			width:num(90rem);
+			position:absolute;
+			right:0;
+			top:0;
+			background:transparent;
+			z-index:2;
+		}
+	}
+	button{
+		width:num(278rem);
+		border-radius:num(18rem);
+		line-height:num(42rem);
+		margin-top:num(26rem);
+		background:#FF5777;
+		color:#fff;
+		font-size:num(18rem);
+		border:none;
+		outline:none;
+	}
+	p{
+		font-size:num(16rem);
+		color:#999;
+		float:right;
+		margin-top:num(14rem);
+	}
+}
+.warn{
+	width:num(150rem);
+	height:num(42rem);
+	background:#eb6885;
+	border-radius:num(4rem);
+	margin:num(28rem) auto 0;
+	font-size:num(12rem);
+	color:#fff;
+	line-height:num(42rem);
+	text-align:center;
+	display:none;
+}
+.tran{
+	display:none;
+	width:100%;
+	height:100%;
+	background:#fff;
+	div{
+		width:num(100rem);
+		height:num(100rem);
+		background:url(../img/login/cen.png) center center no-repeat;
+		background-size:100% auto;
+		position:relative;
+		top:50%;
+		left:50%;
+		margin-left:num(-50rem);
+		margin-top:num(-50rem);
+		img{
+			width:num(100rem);
+			height:num(100rem);
+		}
+	}
+}
+// @keyframes rond{
+// 	0%{
+// 		transform:rotateZ(0deg);
+// 	}
+// 	100%{
+// 		transform:rotateZ(180deg);
+// 	}
+// }

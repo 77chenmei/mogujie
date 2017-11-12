@@ -1,0 +1,90 @@
+@function num($val){
+	@return $val / 20
+};
+input::-webkit-input-placeholder{ 
+    color:#EDEDED;
+}
+#cr{
+	div{
+		width:num(38rem);
+		height:num(38rem);
+		border-radius:50%;
+		background-size:100% auto;
+		margin:0 auto;
+		img{
+			width:num(38rem);
+			height:num(38rem);
+		}
+	}
+	span{
+		display:block;
+		text-align:center;
+		line-height:num(38rem);
+		font-size:num(12rem);
+		color:#666;
+	}
+}
+h1{
+	line-height:num(35rem);
+	text-align:center;
+	padding:num(66rem) 0 num(42rem);
+	font-size:num(24rem);
+	color:#444
+}
+.log{
+	display:block;
+	width:num(270rem);
+	height:num(44rem);
+	border-radius:num(18rem);
+	background:#0ab8f5;
+	margin:0 auto;
+	font-size:num(12rem);
+	color:#fff;
+	line-height:num(44rem);
+	text-align:center;
+	img{
+		width:num(20rem);
+		height:num(20rem);
+		margin-right:num(15rem);
+		vertical-align:middle;
+	}	
+}
+.register{
+	display:block;
+	color:#ff1877;
+	font-size:num(12rem);
+	text-align:center;
+	margin-top:num(20rem);
+	}
+.line{
+	width:num(20rem);
+	height:num(65rem);
+	border-bottom:num(1rem) solid #bbb;
+	margin:0 auto;
+}
+.pst{
+	line-height:num(88rem);
+	text-align:center;
+	font-size:num(12rem);
+	color:#999;
+}
+.sty{
+	width:num(190rem);
+	overflow:hidden;
+	margin:0 auto;
+	.sty_left{
+		@extend #cr;
+		float:left;
+		img{
+
+		}
+	}
+	.sty_right{
+		@extend #cr;
+		float:right;
+		div{
+			
+		}
+	}		
+}
+

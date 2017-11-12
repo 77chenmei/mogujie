@@ -1,0 +1,64 @@
+@function num($val){
+	@return $val / 20
+};
+#i{
+	display:inline-block;
+	width:num(33rem);
+	height:num(20rem);
+	background:#fff;
+	margin-top:10px;	
+}
+header{
+	width:100%;
+	.search{
+		width:num(300rem);
+		height:num(40rem);
+		margin:0 auto;
+		line-height:num(40rem);
+		.message{
+			@extend #i;
+			float:left;
+			background:url(../img/icon1.png) no-repeat center center;
+			background-size:num(15rem) auto;
+		}
+		p{
+			display:inline-block;
+			width:num(225rem);
+			height:num(25rem);
+			background:#eee;
+			clear:both;
+			position:absolute;
+			top:5.5px;
+			left:50%;
+			margin-left:-5.5rem;
+			overflow:hidden;
+			i{
+				display:inline-block;
+				width:num(24rem);
+				height:num(24rem);
+				height:100%;
+				position:absolute;
+				margin-top:0;
+				background:url(../img/icon2.png) no-repeat center center;
+				background-size:num(15rem) auto;
+			}
+			input{
+				width:num(200rem);
+				height:100%;
+				margin:0 auto;
+				outline:none;
+				border:none;
+				float:right;
+				margin-top:0;
+				background:#eee;
+				color:#9e9eb2;
+			}
+		}
+		.cart{
+			@extend #i;
+			float:right;
+			background:url(../img/icon3.png) no-repeat center center;
+			background-size:num(15rem) auto;
+		}
+	}
+}

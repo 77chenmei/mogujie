@@ -10,6 +10,10 @@
 }(document, window));
 //当页面加载完成后实现：
 window.onload = function(){
+	//点击购物车图标
+	$('.cart').click(function(){
+		self.location = 'shop.html';
+	})
 	//index banner 轮播图
 	var img = document.querySelector('.banner_img');
 	//通过获取class名获取img标签
@@ -44,8 +48,7 @@ window.onload = function(){
 			i++;//i自增，实现一个循环
 		},1000)//图片轮播时间间隔1s
 	}
-
-
-
-
+	$('.bag').click(function(){
+		self.location = 'details.html';
+	})
 }
