@@ -51,4 +51,21 @@ window.onload = function(){
 	$('.bag').click(function(){
 		self.location = 'details.html';
 	})
+	//倒计时
+	var hour = document.getElementById('hour');
+	var minute = document.getElementById('minute');
+	var second = document.getElementById('second');
+	setInterval(function(){
+		var newDate = new Date();
+		var futDate = new Date(2017,11,14,0,0,0);
+		var newmis = newDate.getTime();
+		var futmis = futDate.getTime();
+		var mis = futmis - newmis;
+		var h = parseInt(mis%(24*60*60*1000)/(60*60*1000));
+		var min = parseInt(mis%(24*60*60*1000)%(60*60*1000)/(60*1000));
+		var s = parseInt(mis%(24*60*60*1000)%(60*60*1000)%(60*1000)/1000);
+        hour.innerHTML = h;
+        minute.innerHTML = min; 
+        second.innerHTML = s; 
+	},1) 
 }
